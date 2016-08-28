@@ -26,5 +26,14 @@
     <ClInclude Include="entities\character\character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="entities\player\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\entity\entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="map\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

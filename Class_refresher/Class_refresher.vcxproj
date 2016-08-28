@@ -116,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entities\character\character.h" />
+    <ClInclude Include="entities\entity\entity.h" />
+    <ClInclude Include="entities\player\player.h" />
+    <ClInclude Include="map\map.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

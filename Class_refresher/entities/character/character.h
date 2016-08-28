@@ -1,25 +1,25 @@
 #pragma once
+#include "../entity/entity.h"
 #include <string>
 
+class character : public entity {
 
-// Inline defined, doesn't need .cpp file.
-class character {
-private:
-	int hp;
-	int mana;
-	std::string name;
 public:
 	//Constructor
-	character(){ hp = 100; mana = 100; name = "John Doe"; }
+	character(int x_pos, int y_pos )	:	entity(x_pos, y_pos, false)
+	{ hp_ = 100; mana_ = 100; name_ = "John Doe"; }
 
 	// Get functions
-	const int char_getHp() const { return this->hp; }
-	const int char_getMana() const { return this->mana; }
-	const std::string char_getName() const { return this->name; }
+	const int get_hp() const { return this->hp_; }
+	const int get_mana() const { return this->mana_; }
+	const std::string get_name() const { return this->name_; }
+	
+	// Actions
+	void take_damage(int damage);
 
-	// Set functions
-	void char_setHp(int new_hp) { hp = new_hp; }
-	void char_setMana(int new_mana) { mana = new_mana; }
-	void char_setName(std::string new_name) { name = new_name; }
+private:
+	int hp_;
+	int mana_;
+	std::string name_;
 
 };
